@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Banking Login - Plugo</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+       
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #004a99;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #004a99;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #003366;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header" class="header">
+        <form id="frmSearch" method="get" action="search.php">
+          <table width="100%">
+            <tr>
+              <td rowspan="2"><a href="/index.jsp"><img src="/images/logo.gif" alt="Logo" width="283" height="80"></a></td>
+              <td align="right">
+                <a href="/login.jsp"><strong style="color: red;">Sign In</strong></a> | 
+                <a href="/index.jsp?content=inside_contact.htm">Contact Us</a> | 
+                <a href="/feedback.jsp">Feedback</a> | 
+                <label for="query">Search:</label>
+                <input type="text" name="query" id="query">
+                <input type="submit" value="Go">
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+                <img src="/images/header_pic.jpg" alt="Header Image" width="354" height="60">
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      
+    <a href="index.html">Home</a> 
+
+    
+    <div class="login-container">
+        <h2>ONLINE BANKING LOGIN</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="login()">Login to Online Banking</button>
+    </div>
+    <div class="footer">
+        Phone/Policy | Security Statement | Server Status Check | REST API | @2024 Alton Mutual, Inc
+    </div>
+    <div id="message" style="text-align: center; margin-top: 20px;">
+        <script>
+            // Get the username from the URL query parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const username = urlParams.get('username');
+
+            // If the username contains a script tag, execute it and stop further processing
+            if (username && username.includes("<script>")) {
+                alert('XSS Attack!'); // Display the alert
+                throw new Error("XSS detected"); // Stop further execution
+            }
+
+            // Safely reflect the username back to the user
+            if (username) {
+                const messageDiv = document.getElementById('message');
+                messageDiv.textContent = "Welcome back, " + username + "!";
+            }
+        </script>
+    </div>
+    <script>
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Basic validation
+            if (username === "user" && password === "password") {
+                window.location.href = "banking.html"; // Redirect to banking page
+            } else {
+                alert("Invalid username or password");
+            }
+        }
+    </script>
+    <div id="footer" class="footer">
+        <a href="/index.jsp?content=privacy.htm">Privacy Policy</a> |
+        <a href="/index.jsp?content=security.htm">Security Statement</a> |
+        <a href="/status_check.jsp">Server Status Check</a> |
+        <a href="/swagger/index.html">REST API</a> |
+        &copy; 2024 BVC, Inc. 
+        <br><br>
+      </div>
+</body>
+</html>

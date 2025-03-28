@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background for clean aesthetics */
+    margin: 0;
+    padding: 0;
+    color: #000000; /* Black as default text color */
+}
+
+#header {
+    background-color: #50bfbf; /* Teal header */
+    color: #ffffff; /* White text for contrast */
+    padding: 10px 0;
+}
+
+#header a {
+    color: #ffffff; /* White links in the header */
+    text-decoration: none;
+}
+
+#header form {
+    text-align: right;
+    padding: 0 20px;
+}
+
+#header img {
+    max-width: 100%;
+}
+
+/* Navigation Bar */
+.nav-item {
+    padding: 10px;
+    background-color: #85bfb4; /* Soft teal navigation bar */
+    text-align: center;
+}
+
+.nav-item a {
+    color: #000000; /* Black text for contrast in navigation */
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    font-weight: bold;
+    color: #50bfbf; /* Teal hover effect for navigation links */
+}
+
+/* Wrapper and Layout */
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 25%;
+    background-color: #85bfb4; /* Soft teal background */
+    padding: 20px;
+    color: #000000; /* Black text for readability */
+    border-radius: 5px;
+}
+
+.sidebar a {
+    font-weight: bold;
+    display: block;
+    padding: 5px 0;
+    color: white; /* Teal links */
+}
+
+.sidebar a:hover {
+    color: #000000; /* Black hover effect for sidebar links */
+}
+
+/* Main Content and Containers */
+.main-content,
+.container {
+    width: 70%;
+    max-width: 1024px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #ffffff; /* White background for containers */
+    color: #000000; /* Black text for readability */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #85bfb4; /* Soft teal border */
+}
+
+.main-content h2, .container h2 {
+    color: #50bfbf; /* Teal headers */
+}
+
+.main-content img, .container img {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #85bfb4; /* Soft teal border */
+}
+
+/* Footer */
+.footer {
+    background-color: #50bfbf; /* Teal footer */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer a {
+    color: #ffffff; /* White footer links */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer span {
+    font-size: 12px;
+}
+
+/* Notice Box */
+.notice {
+    border: 1px dashed #50bfbf; /* Teal dashed border for emphasis */
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff; /* White background for notice box */
+    color: #50bfbf; /* Teal text for notice box */
+}
+
+/* Security Tips Section */
+.always-never {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tip {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tip.always {
+    background-color: #50bfbf; /* Teal for "Always" tips */
+    color: #ffffff; /* White text */
+}
+
+.tip.never {
+    background-color: #85bfb4; /* Soft teal for "Never" tips */
+    color: #000000; /* Black text */
+}
+
+.tip img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.guidelines {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.guidelines div {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #50bfbf; /* Teal border for guideline boxes */
+    border-radius: 5px;
+    background: #ffffff; /* White background */
+    color: #000000; /* Black text */
+}
+
+.guidelines div ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.guidelines div ul li {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #000000; /* Black text for list items */
+}

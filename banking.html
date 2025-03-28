@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Banking - Plugo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background-color: #004a99;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header" class="header">
+        <form id="frmSearch" method="get" action="search.php">
+          <table width="100%">
+            <tr>
+              <td rowspan="2"><img src="bankk.png" alt="Logo" width="100" height="40" align="left"></td>
+              <td align="left">BVC BANKING</td>
+              <td align="right">
+                <a href="signin.html"><strong style="color: red;">Sign In</strong></a> | 
+                <a href="about.html">Contact Us</a> | 
+                <a href="feedback.html">Feedback</a> | 
+                <label for="query">Search:</label>
+                <input type="text" name="query" id="query">
+                <input type="submit" value="Go">
+              </td>
+            </tr>
+            <tr>
+              
+            </tr>
+          </table>
+        </form>
+      </div>
+    <div class="header">
+        <h1>Welcome to Your Banking Dashboard</h1>
+    </div>
+    <div class="content">
+        <p>Here you can manage your accounts, view transactions, and more.</p>
+    </div>
+    <div class="footer">
+        Phone/Policy | Security Statement | Server Status Check | REST API | @2024 Alton Mutual, Inc
+    </div>
+</body>
+</html>

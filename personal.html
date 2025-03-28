@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BVC Services</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .box {
+            background-color:  #85bfb4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin: 10px;
+            flex: 1 1 calc(33.333% - 40px);
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .box h2 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .box p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="header" class="header">
+        <form id="frmSearch" method="get" action="search.php">
+          <table width="100%">
+            <tr>
+              <td rowspan="2"><a href="/index.jsp"><img src="/images/logo.gif" alt="Logo" width="283" height="80"></a></td>
+              <td align="right">
+                <a href="/login.jsp"><strong style="color: red;">Sign In</strong></a> | 
+                <a href="/index.jsp?content=inside_contact.htm">Contact Us</a> | 
+                <a href="/feedback.jsp">Feedback</a> | 
+                <label for="query">Search:</label>
+                <input type="text" name="query" id="query">
+                <input type="submit" value="Go">
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+                <img src="/images/header_pic.jpg" alt="Header Image" width="354" height="60">
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      
+    <div class="container">
+        <div class="box">
+            <h2>Whats New</h2>
+        </div>
+        <div class="box">
+            <h2>BVC Holiday Savings Account</h2>
+        </div>
+        <div class="box">
+            <h2>Apply online for Home /Car /Personal/ Education loan</h2>
+        </div>
+        <div class="box">
+            <h2>Forex Outward Remittance Scheme</h2>
+        </div>
+        <div class="box">
+            <h2>View State Bank Rewardz Loyalty Points</h2>
+        </div>
+        <div class="box">
+            <h2>BVC Finder</h2>
+        </div>
+        <div class="box">
+            <h2>Smart Pay-out Card</h2>
+        </div>
+        <div class="box">
+            <h2>mCash</h2>
+        </div>
+        <div class="box">
+            <h2>Mobile/DTH Recharge</h2>
+        </div>
+        <div class="box">
+            <h2>Online Fixed Deposit under Income Tax Savings Scheme</h2>
+        </div>
+        <div class="box">
+            <h2>mCash - Claim Money</h2>
+        </div>
+        <div class="box">
+            <h2>E Annuity Deposit</h2>
+        </div>
+        <div class="box">
+            <h2>Tax payments</h2>
+        </div>
+        <div class="box">
+            <h2>Over Draft against Fixed Deposit</h2>
+        </div>
+        <div class="box">
+            <h2>Buy Affordable e-Life Insurance Cover</h2>
+        </div>
+        <div class="box">
+            <h2>Life insurance cover of Rs.1 Cr for Rs.18 a day</h2>
+        </div>
+        <div class="box">
+            <h2>Block ATM Card</h2>
+        </div>
+    </div>
+
+    <div id="footer" class="footer">
+        <a href="/index.jsp?content=privacy.htm">Privacy Policy</a> |
+        <a href="/index.jsp?content=security.htm">Security Statement</a> |
+        <a href="/status_check.jsp">Server Status Check</a> |
+        <a href="/swagger/index.html">REST API</a> |
+        &copy; 2024 BVC, Inc. 
+        <br><br>
+      </div>
+</body>
+</html>
